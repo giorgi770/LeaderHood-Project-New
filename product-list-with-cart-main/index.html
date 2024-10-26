@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forphoneszoom.css">
+  <title>Product List with Cart</title>
+</head>
+<body>
+
+  <header>
+    <h1>Desserts</h1>
+    <div class="cart" onclick="toggleCart()">
+      <img src="./assets/images/illustration-empty-cart.svg" alt="Cart">
+      <span class="cart-count" id="cart-count">0</span>
+    </div>
+  </header>
+
+  <div id="cart-modal" class="cart-modal hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p class="total-price">Total: $<span id="total-price">0.00</span></p>
+    <form id="payment-form" onsubmit="confirmOrder(event)">
+        <h3>Payment Information</h3>
+        <input type="text" placeholder="Card Number" required>
+        <input type="text" placeholder="Name on Card" required>
+        <input type="text" placeholder="Expiration Date (MM/YY)" required>
+        <input type="text" placeholder="CVV" required>
+        <button type="submit">Confirm Order</button>
+    </form>
+    <button onclick="startNewOrder()" class="start-order-button">Start New Order</button>
+    <button onclick="toggleCart()">Close</button>
+    <div id="order-status" class="hidden"></div>
+  </div>
+
+  <main>
+    <div class="product-list" id="product-list">
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-waffle-thumbnail.jpg" alt="Waffle with Berries" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+        </div>
+        <h2>Waffle with Berries</h2>
+        <p>Type: Waffle</p>
+        <p>Price: $6.50</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="Vanilla Bean Crème Brûlée" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+        </div>
+        <h2>Vanilla Bean Crème Brûlée</h2>
+        <p>Type: Crème Brûlée</p>
+        <p>Price: $7.00</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-macaron-thumbnail.jpg" alt="Macaron Mix of Five" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+        </div>
+        <h2>Macaron Mix of Five</h2>
+        <p>Type: Macaron</p>
+        <p>Price: $8.00</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-tiramisu-thumbnail.jpg" alt="Classic Tiramisu" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(4)">Add to Cart</button>
+        </div>
+        <h2>Classic Tiramisu</h2>
+        <p>Type: Tiramisu</p>
+        <p>Price: $5.50</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-baklava-thumbnail.jpg" alt="Pistachio Baklava" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(5)">Add to Cart</button>
+        </div>
+        <h2>Pistachio Baklava</h2>
+        <p>Type: Baklava</p>
+        <p>Price: $4.00</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-meringue-thumbnail.jpg" alt="Lemon Meringue Pie" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(6)">Add to Cart</button>
+        </div>
+        <h2>Lemon Meringue Pie</h2>
+        <p>Type: Pie</p>
+        <p>Price: $5.00</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-cake-thumbnail.jpg" alt="Red Velvet Cake" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(7)">Add to Cart</button>
+        </div>
+        <h2>Red Velvet Cake</h2>
+        <p>Type: Cake</p>
+        <p>Price: $7.70</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/images/image-brownie-thumbnail.jpg" alt="Salted Caramel Brownie" onclick="enlargeImage(this)">
+          <button class="add-to-cart" onclick="addToCart(8)">Add to Cart</button>
+        </div>
+        <h2>Salted Caramel Brownie</h2>
+        <p>Type: Brownie</p>
+        <p>Price: $5.70</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

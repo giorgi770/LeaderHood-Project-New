@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="foricon.png">
+    <title>Document</title>
+</head>
+<body>
+</div>
+          <header>
+            <div class="header-container">
+                <div class="logo">
+                </div>
+                <div class="contact-info">
+                    <span>*7007 / +995 (32) 2 60 30 60</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="ძებნა...">
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+                </div>
+                <div class="language-cart-profile">
+                    <div class="language-selector">
+                        <button>GEO</button>
+                        <button>ENG</button>
+                    </div>
+                    <div class="cart-profile-icons">
+                        <button id="cartBtn">🛒 კალათა</button>
+                        <div id="cartModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>კალათა</h2>
+                                <p>0 პროდუქტი</p>
+                                <img src="https://zoommer.ge/icons/emptybag.svg" alt="კალათა">
+                                <p>ჯამური ღირებულება: 0 ₾</p>
+                                <button>კალათის გასწორება</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="slides">
+    <img src="https://zoommer.ge/icons/main-logo.svg" alt="">
+    <div class="slider-container">
+        <div class="slide">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F9ded56b5-d31c-49e3-9d09-1a430acd0bac_Thumb.jpeg&w=828&q=75" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F3b62e7c9-693f-4538-bf4a-6db1778a5d7f_Thumb.jpeg&w=828&q=75" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fb3e143ef-bfc3-4c70-a071-28c65d6980b1_Thumb.jpeg&w=828&q=75" alt="Slide 3">
+        </div>
+        <div class="slide">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fca6cf6e2-0a09-4802-a834-399d0fab4945_Thumb.jpeg&w=828&q=75" alt="Slide 4">
+        </div>
+      </div>
+              <!-- Sidebar Menu -->
+              <aside class="sidebar">
+                <ul>
+                    <li>📱 მობილურები</li>
+                    <li>💻 ლეპტოპები</li>
+                    <li>🖥️ პერსონალური | IT</li>
+                    <li>⌚ სმარტ გაჯეტები</li>
+                    <li>🔊 აუდიო სისტემები</li>
+                    <li>🎮 Gaming</li>
+                    <li>📺 TV | მონიტორები</li>
+                    <li>📷 ფოტო | ვიდეო</li>
+                </ul>
+            </aside>
+        <br>
+    <div class="product-container">
+        <div class="product">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F953d77a2-d1d3-4e7f-9f46-a40081ac6552_Thumb.jpeg&w=384&q=50" alt="iPhone 16 Pro Max">
+          <button class="best-price">BEST PRICE</button>
+          <div class="price">4699 ₾</div>
+          <div class="description">Apple iPhone 16 Pro Max | 256GB</div>
+        </div>
+
+        <div class="product">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F90860f84-46c8-4175-b476-5a15cb2ca95c_Thumb.png&w=384&q=50" alt="iPhone 16 Pro">
+          <button class="best-price">BEST PRICE</button>
+          <div class="price">3899 ₾</div>
+          <div class="description">Apple iPhone 16 Pro | 128GB</div>
+        </div>
+        <div class="product">
+          <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F92032fba-fa64-4c8c-a2e4-4dc45fd9d3d4_Thumb.png&w=384&q=50" alt="iPhone 16">
+          <button class="best-price">BEST PRICE</button>
+          <div class="price">2999 ₾</div>
+          <div class="description">Apple iPhone 16 | 128GB</div>
+        </div>
+        <!-- დამატებითი პროდუქტები -->
+      </div>
+
+      <nav class="top-nav">
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item active" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+    </nav>
+
+    <div class="bottom-nav">
+        <div class="nav-icon">
+            <span class="icon">🏠</span>
+            მთავარი
+        </div>
+        <div class="nav-icon">
+            <span class="icon">🔲</span>
+            კატეგორიები
+        </div>
+        <div class="nav-icon active">
+            <span class="icon">%</span>
+            აქციები
+        </div>
+        <div class="nav-icon">
+            <span class="arrow">&larr;</span>
+        </div>
+        <div class="nav-icon">
+            <span class="icon">👤</span>
+            შესვლა
+        </div>
+    </div>
+
+    <div class="products-wrapper">
+        <div class="product">
+            <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fd8cca78f-bc44-4a43-a168-f616b2ceb3f7a9f9840d-8002-489f-a65e-47e0c2f371eb.jpeg&w=384&q=50" alt="599 ₾ თვეში: 16 ₾ -დან Xiaomi TV A 32 2025 EU">
+            <div class="price">599 ₾</div>
+            <div class="description">599 ₾ თვეში: 16 ₾ -დან Xiaomi TV A 32 2025 EU</div>
+        </div>
+    
+        <div class="product">
+            <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fef6e7f93-7c5d-4840-84f4-f814883e4a67f24735b9-9cd1-4fd6-b42f-4b9115ae3f25.jpeg&w=384&q=50" alt="">
+            <button class="best-price">BEST PRICE</button>
+            <div class="price">1349 ₾</div>
+            <div class="description">1349 ₾ თვეში: 37 ₾ -დან Xiaomi TV A Pro 55 2025 EU</div>
+        </div>
+    
+        <div class="product">
+            <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fc726bb28-6ceb-4b34-9a04-9dee8d188034dcd1f8f3-0591-4e6a-8d10-7ba2a00fb4aa.jpeg&w=384&q=50" alt="">
+            <div class="price">2599 ₾</div>
+            <div class="description">2599 ₾ თვეში: 72 ₾ -დან Samsung TV QE55Q70CATXZT-2023-ტელევიზორი</div>
+        </div>
+    </div>
+    
+
+    <nav class="top-nav">
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item active" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+    </nav>
+
+    <div class="products-wrapper">
+        <div class="product">
+            <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fb366d071-8b1a-489f-a99b-6ff4f84e212f_Thumb.jpeg&w=384&q=50" alt="">
+            <div class="price">7699 ₾</div>
+            <div class="description">7699 ₾ Asus ROG Zephyrus G16 GU605MI-QR077 Eclipse Grey 7699 ₾ თვეში: 213 ₾ -დან
+                </div>
+        </div>
+    
+        <div class="product">
+            <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0189253_asus-rog-strix-g16-g614ji-n4083-volt-green_550.jpeg&w=640&q=100" alt="">
+            <div class="price">6399 ₾</div>
+            <div class="description">ნოუთბუქი Asus ROG Strix G16 G614JI-N4083 6399 ₾ თვეში: 177.8 ₾ -დან
+                </div>
+        </div>
+    
+        <div class="product">
+            <img src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0191077_asus-vivobook-go-15-oled-e1504fa-l1285-amd-ryzen-5-7520u-amd-radeon-graphics-8gb-ram-ssd-512gb-free-_550.jpeg&w=640&q=100" alt="">
+            <div class="price">1379 ₾</div>
+            <div class="description">1379 ₾
+                Asus VivoBook Go 15 OLED E1504FA-L1285, AMD Ryzen 5 7520U, AMD Radeon Graphics, 8GB RAM SSD 512GB, Free Dos, ლეპტოპი 1379 ₾ თვეში: 38.3 ₾ -დან
+                </div>
+        </div>
+    </div>
+    <nav class="top-nav">
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item active" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="arrow">&larr;</span>
+        </button>
+        <button class="nav-item" onclick="addItemToCart()">
+            <span class="icon">🛒</span>
+            დამატება
+        </button>
+    </nav>
+
+    <h3>ბრენდები</h3>
+    <img src="https://s3.zoommer.ge/site/785f4f88-486d-4998-9ce1-9bf115c11ad6a0861624-1f60-4343-818e-f628fe1abb7c.png" alt="">
+    <img src="https://s3.zoommer.ge/site/abd78ab1-9774-4e6e-9e8e-f34d3b47ce3c8f9abcd5-7c13-4106-a151-becc3edcc035.png" alt="">
+    <img src="https://s3.zoommer.ge/site/dda50f27-84f4-43a4-a34b-01e6bd0bc47eb9b0703c-b15a-4f20-9b39-f9d3fef0826f.png" alt="">
+    <img src="https://s3.zoommer.ge/site/d2a5148c-12ce-4b00-9c34-a9b04bf434a9ee7fb9a4-709d-455e-a166-fc56bdbb4a51.png" alt="">
+    <img src="https://s3.zoommer.ge/site/37a79804-bed8-4564-8ec9-02622d14e9de0a0fbe89-7bbd-4d77-bd88-d593d4c148da.png" alt="">
+    <img src="https://s3.zoommer.ge/site/226f03c1-cf4c-4088-b100-5ddb26d686602ab10a51-de39-4afd-971a-42e697822ea8.png" alt="">
+    <img src="https://s3.zoommer.ge/site/b10f97ef-8fec-416a-983b-b14b71e2f1acb04175ae-2b3e-43eb-8734-abee90cc626e.png" alt="">
+
+    <!-- ღილაკი, რომელიც ზემოთ აყავს -->
+    <button onclick="scrollToTop()" id="backToTopBtn">ზევით დაბრუნება</button>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://www.facebook.com/zoommerge"><img src="https://th.bing.com/th?id=ODLS.1291e6a9-baa2-41d5-8ee6-0c836fb280c9&w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2" alt="Facebook"></a>
+                <a href="#"><img src="https://th.bing.com/th?id=ODLS.673e3827-800e-44f1-8900-24dfdabec7e3&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="Instagram"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.t1fyvKgDnUoIiC049MG48AHaHa?w=153&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Twitter"></a>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 Zoommer.ge. ყველა უფლება დაცულია.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script src="script.js"></script>             

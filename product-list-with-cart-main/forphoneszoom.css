@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a5cfe;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3ec93e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-count {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s; /* Animation for image scaling */
+}
+
+.product h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1d4ed8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #2563eb;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    background-color: #f1f5f9;
+    margin-top: auto;
+}
+
+/* Additional CSS for Cart Modal */
+.cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 80%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cart-modal h2 {
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cart-modal {
+    max-height: 80vh;
+    overflow-y: auto; /* Scroll functionality */
+}
+
+.cart-item-image {
+    width: 50px; /* or any other size */
+    height: 50px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.start-order-button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.start-order-button:hover {
+    background-color: darkorange;
+}
+
+#order-status {
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animation for checkmark */
+.animate-checkmark {
+    animation: fadeIn 0.5s ease-out, fadeOut 0.5s 2.5s forwards; /* Animation definition */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.checkmark {
+    font-size: 50px; /* Checkmark size */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-list {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .product {
+        padding: 10px; /* Reduce padding inside products */
+    }
+
+    .cart-modal {
+        width: 90%; /* Make modal wider on smaller screens */
+    }
+
+    .cart-count {
+        font-size: 14px; /* Adjust font size */
+    }
+}

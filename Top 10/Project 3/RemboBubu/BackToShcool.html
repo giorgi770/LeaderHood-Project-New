@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to School</title>
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main-banner {
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 40px;
+}
+
+.main-banner h2 {
+    font-size: 2rem;
+}
+
+.shop-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.group-photo {
+    text-align: center;
+    padding: 20px;
+}
+
+.group-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+</style>
+
+
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.trending, .shop-by-category {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #333;
+    color: white;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shop-all {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: blue;
+    text-decoration: none;
+}
+
+.shop-by-category {
+    text-align: center;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+</style>
+
+<body>
+    <header>
+        <h1>Back to School</h1>
+    </header>
+    <main>
+        <section class="categories">
+            <div class="category">
+                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw6c08d325/images/page-designer/2024/July/16130_Comp_X_Mens_Shoes.jpg" alt="Shoes">
+                <p>Shoes</p>
+            </div>
+            <div class="category">
+                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw983b133b/images/page-designer/2024/July/16130_Comp_X_Clothing.jpg" alt="Clothing">
+                <p>Clothing</p>
+            </div>
+            <div class="category">
+                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwf8406c64/images/page-designer/2024/July/16130_Comp_X_Accessories.jpg" alt="Accessories">
+                <p>Accessories</p>
+            </div>
+        </section>
+        <section class="main-banner">
+            <h2>We're back.</h2>
+            <a href="#" class="shop-button">Shop now</a>
+        </section>
+        <section class="group-photo">
+            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw9adf24fb/images/page-designer/2024/July/16310_Comp_A_O1_Desktop.jpg" alt="Group of People">
+            <br>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to School</title>
+</head>
+<body>
+    <header>
+        <h1>Back to School</h1>
+    </header>
+    <main>
+        <!-- Trending Now Section -->
+        <section class="trending">
+            <h2>Trending now</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-target="women">Women</button>
+                <button class="tab-button" data-target="men">Men</button>
+                <button class="tab-button" data-target="kids">Kids</button>
+            </div>
+            <div class="tab-content" id="women">
+                <div class="item">
+                    <img src="https://nb.scene7.com/is/image/NB/w1080r13_nb_02_i?$pdpflexf2$&wid=928&hei=928" alt="Shoe 1">
+                    <p>Fresh Foam X 1080v13<br><strong>$164.99</strong></p>
+                </div>
+                <div class="item">
+                    <img src="https://nb.scene7.com/is/image/NB/ws327ke_nb_02_i?$pdpflexf2$&wid=928&hei=928" alt="Shoe 2">
+                    <p>327<br><strong>$99.99</strong></p>
+                </div>
+                <div class="item">
+                    <img src="https://nb.scene7.com/is/image/NB/wt43541ahh_nb_70_i?$pdpflexf2$&wid=928&hei=928" alt="Shirt 1">
+                    <p>Graphic Oversized Jersey T-Shirt<br><strong>$29.74</strong></p>
+                </div>
+                <div class="item">
+                    <img src="https://nb.scene7.com/is/image/NB/ws41510lin_nb_55_i?$pdpflexf2$&wid=928&hei=928" alt="Shorts 1">
+                    <p>Athletics Mesh Short<br><strong>$45.74</strong></p>
+                </div>
+            </div>
+            <a href="#" class="shop-all">Shop all</a>
+        </section>
+
+        <!-- Shop by Category Section -->
+        <section class="shop-by-category">
+            <h2>Shop by category</h2>
+            <div class="category-grid">
+                <div class="category">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw7d4e8f94/images/page-designer/2024/July/16310_Comp_I_Running.jpg" alt="Category 1">
+                </div>
+                <div class="category">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw54d2e508/images/page-designer/2024/July/16310_Comp_I_Lifestyle.jpg" alt="Category 2">
+                </div>
+                <div class="category">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw9e90c01b/images/page-designer/2024/July/16310_Comp_I_Graphics.jpg" alt="Category 3">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+<style>
+    footer {
+    background-color: white;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    margin: 0;
+}
+
+.newsletter button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-brand {
+    width: 60%;
+}
+
+.footer-brand img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+</style>
+
+<footer>
+    <div class="newsletter">
+        <p>Be the first to know about new arrivals</p>
+        <a href="Sign Up.html" class="shop-button">Sign up</a>
+    </div>
+    <div class="footer-links">
+        <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="https://www.newbalance.com/customerservice/">Contact us</a></li>
+                <li><a href="https://www.newbalance.com/returns/">Start a return</a></li>
+                <li><a href="https://www.newbalance.com/order-status/">Track your order</a></li>
+                <li><a href="https://www.newbalance.com/membership/">Become a member</a></li>
+                <li><a href="https://www.newbalance.com/size-guide.html">Size guide</a></li>
+                <li><a href="https://www.newbalance.com/faqs/">FAQ</a></li>
+                <li><a href="https://www.newbalance.com/how-early-access-works.html">How early access works</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="https://www.newbalance.com/visit-new-balance-stores/">Find a store</a></li>
+                <li><a href="https://www.newbalance.com/returns/">Gift cards</a></li>
+                <li><a href="https://www.newbalance.com/customer-service-shipping.html">Shipping information</a></li>
+                <li><a href="https://www.newbalance.com/sale-exclusions.html">Sale exclusions</a></li>
+                <li><a href="https://www.newbalanceteam.com/">Custom uniforms</a></li>
+                <li><a href="https://newbalancereconsidered.com/?utm_source=new-balance&utm_medium=referral&utm_campaign=faq-page">Reconsidered</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="https://www.newbalance.com/our-purpose.html">Our purpose</a></li>
+                <li><a href="https://www.newbalance.com/responsible-leadership.html">Responsible leadership</a></li>
+                <li><a href="https://www.newbalance.com/returns/">Careers</a></li>
+                <li><a href="https://www.newbalance.com/returns/">The TRACK at New Balance</a></li>
+                <li><a href="https://newbalance.newsmarket.com/">Press box</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>For You</h4>
+            <ul>
+                <li><a href="https://www.newbalance.com/idme.html">Special discounts</a></li>
+                <li><a href="https://www.newbalance.com/exp-idea-submission.html">Idea submission</a></li>
+                <li><a href="https://www.newbalance.com/affiliate/">Affiliate program</a></li>
+                <li><a href="https://www.newbalance.com/counterfeit_landing_page.html">Counterfeit products</a></li>
+                <li><a href="https://www.newbalance.com/accessibility_statement.html">Accessibility statement</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        <div class="footer-brand">
+            <img src="https://www.newbalance.com/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw3de6aa04/images/homepage/footer/logo.svg" alt="Brand Logo">
+            <p>Independent since 1906, we empower people through sport and craftsmanship to create positive change in communities around the world.</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/giorgi.varazashvili.399"><img src="data:image/jpeg;base64,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" alt="Facebook"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>US | English</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Website Terms & Conditions</a></li>
+            <li><a href="#">Early Access Official Rules</a></li>
+            <li><a href="#">CA Supply Chains Act</a></li>
+            <li><a href="#">Medical Plan Information</a></li>
+            <li><a href="#">Do Not Sell or Share My Personal Information</a></li> 
+        </ul>
+        <p>&copy; 2024, New Balance</p>
+    </div>
+</footer>

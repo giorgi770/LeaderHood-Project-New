@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    background-color: rgb(8, 23, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 1300px;
+    height: 800px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(206, 206, 206);
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+
+.image-div, .form-div {
+    width: 50%;
+}
+
+.image-div {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/fKAgmJ2GPMmJSr9kC7EkTV.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.form-div form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 17px;
+    outline: none;
+    background-color: rgb(240, 240, 240);
+}
+
+button {
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 17px;
+    background-color: rgb(41, 98, 255);
+    border: 1px solid rgb(41, 98, 255);
+    color: aliceblue;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+
+input, button {
+    font-size: 18px;
+}
+
+a {
+    font-size: 17px;
+    text-decoration: none;
+    width: 100%;
+    text-align: end;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgb(70, 91, 101);
+}
+
+button:hover{
+    background-color: transparent;
+    color: rgb(41, 98, 255);
+}

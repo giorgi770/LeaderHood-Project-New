@@ -1,0 +1,563 @@
+body {
+     font-family: Arial, sans-serif;
+     background-color: #f9f9f9;
+}
+
+
+.slider-container {
+    display: flex;
+    overflow-x: scroll; /* ჰორიზონტალური სქროლის ჩართვა */
+    gap: 20px; /* სივრცე სლაიდებს შორის */
+    padding: 10px; /* კონტეინერის შიდა საზღვრები */
+  }
+  
+  .slide {
+    flex: 0 0 auto; /* სლაიდები არ უნდა გაიზარდოს */
+    width: 300px; /* სლაიდის სიგანე */
+    border-radius: 10px; /* მრგვალი კუთხეები */
+    overflow: hidden; /* გამოსახულების ფიტი */
+  }
+  
+  .slide img {
+    width: 100%; /* გამოსახულების ზომის შესაბამისობა */
+    height: auto;
+    border-radius: 10px; /* გამოსახულების მრგვალი კუთხეები */
+  }
+  
+  
+  
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* თუ გსურს, რომ პროდუქტი გადასცდეს ახალ ხაზზე მცირე ეკრანებზე */
+  }
+  /* Sidebar Styles */
+.sidebar {
+    background-color: #F1F1F1;
+    padding: 20px;
+    width: 200px;
+    position: fixed; /* sidebar ფიქსირებული პოზიციონირებით */
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+}
+
+
+.products-wrapper {
+    display: flex;
+    justify-content: center; /* პროდუქცია ცენტრში */
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* მცირე ეკრანებზე გადატყდება */
+    max-width: 1200px; /* კონტეინერის სიგანის შეზღუდვა */
+    width: 100%; /* მთლიან სივრცეს იკავებს */
+}
+
+*{
+    flex: 1 1 calc(300.333% - 20px); /* სამი პროდუქტი ერთ ხაზზე */
+}
+
+  
+  .product {
+    flex: 1;
+    max-width: 250px; /* ან ნებისმიერი სხვა ზომა, რომელიც გსურს */
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+/* Sidebar Styles */
+.sidebar {
+    background-color: #F1F1F1;
+    padding: 20px;
+    width: 200px;
+    position: fixed; /* sidebar ფიქსირებული პოზიციონირებით */
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+}
+
+/* Main Content Styles */
+main {
+    margin-left: 220px; /* სივრცე sidebar-ისთვის */
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* კონტენტის ცენტრში განთავსება */
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: center; /* პროდუქცია ცენტრში */
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* მცირე ეკრანებზე გადატყდება */
+    max-width: 1200px; /* კონტეინერის სიგანის შეზღუდვა */
+    /* width: 100%; მთლიან სივრცეს იკავებს */
+}
+
+
+  .best-price {
+    background-color: orange; /* ფონის ფერი */
+    color: white; /* ტექსტის ფერი */
+    border: none; /* ღილაკის ჩარჩოს წაშლა */
+    padding: 10px 20px; /* შიდა სივრცე ღილაკში */
+    font-size: 16px; /* ტექსტის ზომა */
+    font-weight: bold; /* ტექსტის სისქე */
+    border-radius: 50px; /* მომრგვალებული კუთხეები */
+    cursor: pointer; /* მაუსის ნიშანი ღილაკზე გადასვლისას */
+    text-align: center; /* ტექსტის ცენტრში გასწორება */
+  }
+  
+  .best-price:hover {
+    background-color: darkorange; /* ღილაკის ფერი მაუსის ნიშნის გადაყვანისას */
+  }
+  
+
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.top-nav, .bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.top-nav {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-item {
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-item.active {
+    background-color: #ff6600;
+    color: white;
+}
+
+.nav-item .icon {
+    font-size: 20px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    color: #ff6600;
+}
+
+.nav-icon.active {
+    color: #ff6600;
+}
+
+.nav-icon .icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.nav-icon .arrow {
+    font-size: 20px;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0; /* განთავსება გვერდის თავში */
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(2, 10, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* არ გამოჩნდება თავიდან */
+}
+
+#backToTopBtn.show {
+    display: block; /* გაჩნდება ჩასქროლვის შემდეგ */
+}
+
+
+
+.products-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* საშუალებას აძლევს პროდუქტებს გადატყდეს ახალ ხაზზე მცირე ეკრანებზე */
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px); /* სამ колонკაში განაწილება */
+    max-width: calc(33.333% - 20px); /* ვადასტურებთ, რომ პროდუქტი 33.3% სიგანის იქნება */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.best-price {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #FF6B00;
+    color: rgb(23, 2, 138);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.contact-info {
+    margin-left: 20px;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
+}
+
+.language-cart-profile {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector button,
+.cart-profile-icons button {
+    background-color: #FF6B00;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.language-selector button:hover,
+.cart-profile-icons button:hover {
+    background-color: #FF9B50;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #F1F1F1;
+    padding: 20px;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: hsl(0, 0%, 88%);
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+/* Main Content Styles */
+main {
+    margin-left: 220px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.slideshow {
+    background-color: #F5F5F5;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #E0E0E0;
+}
+
+
+
+
+.sidebar {
+    position: relative; /* სტაციონარული sidebar */
+    background-color: #F1F1F1;
+    padding: 20px;
+    width: 200px;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+/* Media Queries */
+
+/* Tablets (width: 768px to 1024px) */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 180px;
+    }
+    main {
+        margin-left: 200px;
+    }
+    .product {
+        flex: 1 1 calc(50% - 20px); /* 2 პროდუქტი ერთ ხაზზე პლანშეტებზე */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Smartphones (width: less than 768px) */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* sidebar მთლიანად ქრება მცირე ეკრანებზე */
+    }
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .products-wrapper {
+        justify-content: center;
+    }
+    .product {
+        flex: 1 1 100%; /* თითო პროდუქტი ერთ ხაზზე სმარტფონებზე */
+        max-width: 100%;
+    }
+}
+
+/* Small Smartphones (width: less than 480px) */
+@media (max-width: 480px) {
+    .search-bar input {
+        width: 200px; /* პატარა ეკრანებისთვის შემცირება საძიებო ზონის */
+    }
+    .product {
+        padding: 10px;
+    }
+}
+
+.modal {
+    display: none; /* ფანჯარა დამალულია */
+    position: fixed; /* ფიქსირებული */
+    z-index: 1; /* რომ დაფაროს სხვა კონტენტი */
+    left: 0;
+    top: 0;
+    width: 100%; /* სრული ფანჯარა */
+    height: 100%; /* სრული ფანჯარა */
+    background-color: rgba(0, 0, 0, 0.4); /* შავი გამჭვირვალე ფონ */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto; /* ცენტრში */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* მოდალური ფანჯრის ზომა */
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ffffff;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    display: none;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #3451d3;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 5px;
+}
