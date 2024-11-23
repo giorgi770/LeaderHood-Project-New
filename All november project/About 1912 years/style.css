@@ -1,0 +1,98 @@
+/* style.css */
+
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header and navigation */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2b3b4f;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #002b5c;
+}
+
+.expedition {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.expedition img {
+    width: 100%;
+    height: auto;
+}
+
+.expedition-info {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.expedition h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.expedition p {
+    line-height: 1.5;
+}
+
+.expedition-logo {
+    width: 80px;
+    float: right;
+    margin-top: -10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2b3b4f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}

@@ -51,7 +51,7 @@ const products = [
     'Asus ROG Strix G16 G614JI-N4083 6399',
     'Asus VivoBook Go 15 OLED E1504FA-L1285',
     'All product'
-    // დაამატეთ მეტი პროდუქტების სახელები
+    //დამატება თუ მომინდა
 ];
 
 searchInput.addEventListener('input', function() {
@@ -65,7 +65,6 @@ searchInput.addEventListener('input', function() {
             li.onclick = () => {
                 searchInput.value = product;
                 suggestionsList.style.display = 'none';
-                // აქ შეგიძლიათ დაამატოთ ფუნქცია ძებნის შესრულებისთვის
             };
             suggestionsList.appendChild(li);
         });
@@ -80,3 +79,4 @@ window.addEventListener('click', function(e) {
         suggestionsList.style.display = 'none';
     }
 });
+

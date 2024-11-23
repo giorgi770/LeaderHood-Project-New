@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap; /* თუ გსურს, რომ პროდუქტი გადასცდეს ახალ ხაზზე მცირე ეკრანებზე */
+    flex-wrap: wrap; 
   }
   /* Sidebar Styles */
 .sidebar {
@@ -63,7 +63,7 @@ body {
   
   .product {
     flex: 1;
-    max-width: 250px; /* ან ნებისმიერი სხვა ზომა, რომელიც გსურს */
+    max-width: 250px; 
     text-align: center;
   }
   
@@ -259,8 +259,8 @@ main {
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    flex: 1 1 calc(33.333% - 20px); /* სამ колонკაში განაწილება */
-    max-width: calc(33.333% - 20px); /* ვადასტურებთ, რომ პროდუქტი 33.3% სიგანის იქნება */
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
 }
 
 .product img {

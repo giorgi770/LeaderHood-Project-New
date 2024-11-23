@@ -1,4 +1,4 @@
-function updateClock() {
+''' function updateClock() {
     const now = new Date(); // იღებს მიმდინარე თარიღსა და დროს
     let hours = now.getHours(); // იღებს საათის მნიშვნელობას (0-23)
     const meridiem = hours >= 12 ? "PM" : "AM"; // განსაზღვრავს, AM თუ PM არის
@@ -14,4 +14,4 @@ function updateClock() {
 }
 
 updateClock(); // ერთხელ გაშვება ფუნქციის
-setInterval(updateClock, 1000); // ყოველ წამში საათის განახლება
+setInterval(updateClock, 1000); // ყოველ წამში საათის განახლება '''
